@@ -7,7 +7,7 @@ function App(){
   const newJoke=()=>{
 
          
-        fetch("http://api.icndb.com/jokes/random?firstName=John&amp;lastName=Doe").
+        fetch("http://api.icndb.com/").
         then(resp=>resp.json()).then(result=>{
             console.log(result)
             setJoke(result.value.joke)
